@@ -16,3 +16,13 @@ This project has backend and frontend parts, which use **`MERN`** stack:
 
 ## How it works
 
+
+
+
+
+https://user-images.githubusercontent.com/105806950/207644604-823b0d35-8d3a-45ee-b14a-bf43c3c684b1.mp4
+
+
+
+
+
