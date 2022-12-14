@@ -14,3 +14,5 @@ This project has backend and frontend parts, which use **`MERN`** stack:
 |MongoDB is a non-relational document database that provides support for JSON-like storage.|Express is a node js web application framework that provides broad features for building web and mobile applications.|React is a library for building composable user interfaces.|Node. js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser.|
 |**M**|**E**|**R**|**N**|
 
+## How it works
+
