@@ -1,0 +1,30 @@
+.title{
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.text{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+textarea {
+    width: 100%;
+    border-color: darkgray;
+    border-radius: 7px;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+  }
+
+.warning-div{
+    margin-bottom: 10px;
+}
+
+
+

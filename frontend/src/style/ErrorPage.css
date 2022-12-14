@@ -1,0 +1,30 @@
+.error-page-div {
+  text-align: center;
+}
+
+.error-image {
+  width: 30rem;
+  margin-top: 4rem;
+}
+
+.error-message {
+  font-size: 1.5em;
+  font-family: inherit;
+  margin: 2rem 0;
+  color: rgb(138, 137, 137);
+}
+
+#button-on-error-page {
+  background-color: #e17b8d;
+  border-color: #e17b8d;
+}
+
+#button-on-error-page:hover {
+  background-color: #b1739a;
+  border-color: #b1739a;
+}
+
+#button-on-error-page:active {
+  background-color: #b1739a;
+  border-color: #b1739a;
+}

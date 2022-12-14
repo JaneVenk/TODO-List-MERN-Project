@@ -1,0 +1,13 @@
+.auth-form{
+    width: 30vw;
+    margin-left : 35vw;
+    margin-top: 10vw;
+}
+
+.to-hello-page-button{
+    margin-left: 1rem;
+}
+
+.to-hello-page-button span{
+    font-family: 'Dancing Script', cursive;
+}

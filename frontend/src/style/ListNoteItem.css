@@ -1,0 +1,65 @@
+.item {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    font-family: inherit;
+  }
+  .item h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .item p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .item:hover{
+    box-shadow: 0 5px 8px rgb(152, 152, 152);
+  }
+  
+
+  .deleteButton{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 00);
+    color: #f7f7f7;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .deleteButton:hover{
+    color: black;
+  }
+
+  .updateButton{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 00);
+    color: #f7f7f7;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .updateButton:hover{
+    color: black;
+  }
+
+  .item-info:hover{
+    background-color: #f0eee8;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
