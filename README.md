@@ -5,7 +5,7 @@ TODOG List it`s todo list web application.<br>In this application you can create
 
 ❗ ATTENTION ❗  Hosting, where backend deploys has some rules fo free useage:<br>
 The Starter Plan includes $5 worth of resources across all of your projects for up to 500 hours, whichever runs out first.<br>
-So, if application not work, please, try again in next mounth
+So, if application not work, please, try again in next mounth.
 
 
 ## Project Content
