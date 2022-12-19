@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import AuthContext from "../auth-context";
 import ListItem from "./elements/ListItem";
@@ -11,7 +12,6 @@ import { validateValueLength } from "../checks";
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
-import Masonry from "@mui/lab/Masonry";
 import ErrorIcon from "@mui/icons-material/Error";
 
 import "../style/ListsNotesPages.css";
@@ -139,70 +139,81 @@ function ListsPage() {
               setNewList={setNewList}
               setIsValidNewListTitle={setIsValidNewListTitle}
             >
-              <form className="create-entry">
-                {ckickOnAddNewList ? (
-                  <input
-                    name="title"
-                    placeholder="Title"
+              <div className="form-center">
+                <form className="create-entry">
+                  {ckickOnAddNewList ? (
+                    <input
+                      name="title"
+                      placeholder="Title"
+                      onChange={updateNewList}
+                      value={newList.title}
+                    ></input>
+                  ) : null}
+
+                  <textarea
+                    rows={ckickOnAddNewList ? "3" : "1"}
+                    name="description"
+                    placeholder={
+                      ckickOnAddNewList ? "Description" : "Add new list..."
+                    }
                     onChange={updateNewList}
-                    value={newList.title}
-                  ></input>
-                ) : null}
+                    value={newList.description}
+                    onClick={clickOnTextArea}
+                  ></textarea>
 
-                <textarea
-                  rows={ckickOnAddNewList ? "3" : "1"}
-                  name="description"
-                  placeholder={
-                    ckickOnAddNewList ? "Description" : "Add new list..."
-                  }
-                  onChange={updateNewList}
-                  value={newList.description}
-                  onClick={clickOnTextArea}
-                ></textarea>
+                  {isValidNewListTitle ? null : (
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text">
+                        Empty Title! Write something.
+                      </p>
+                    </div>
+                  )}
 
-                {isValidNewListTitle ? null : (
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text">
-                      Empty Title! Write something.
-                    </p>
-                  </div>
-                )}
+                  {isSuccessfulAdd ? null : (
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text">
+                        List add failed! Check errors.
+                      </p>
+                    </div>
+                  )}
 
-                {isSuccessfulAdd ? null : (
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text">
-                      List add failed! Check errors.
-                    </p>
-                  </div>
-                )}
-
-                <Zoom in={ckickOnAddNewList}>
-                  <Fab type="submit" onClick={addNewList}>
-                    <AddIcon />
-                  </Fab>
-                </Zoom>
-              </form>
+                  <Zoom in={ckickOnAddNewList}>
+                    <Fab type="submit" onClick={addNewList}>
+                      <AddIcon />
+                    </Fab>
+                  </Zoom>
+                </form>
+              </div>
             </OutsideClick>
 
             {lists ? (
               lists.length ? (
                 <div className="outer-block">
-                  <Masonry style={{ margin: 0 }} spacing={4}>
-                    {lists.map((list) => {
-                      return (
-                        <ListItem
-                          key={list._id}
-                          id={list._id}
-                          title={list.title}
-                          description={list.description}
-                          backgroundColor={list.color}
-                          setLists={setLists}
-                        />
-                      );
-                    })}
-                  </Masonry>
+                  <ResponsiveMasonry
+                    columnsCountBreakPoints={{
+                      350: 1,
+                      750: 2,
+                      900: 3,
+                      1224: 4,
+                    }}
+                  >
+                    <Masonry gutter={"1.5rem"}>
+                      {lists.map((list) => {
+                        return (
+                          <ListItem
+                            key={list._id}
+                            id={list._id}
+                            title={list.title}
+                            description={list.description}
+                            backgroundColor={list.color}
+                            setLists={setLists}
+                          />
+                        );
+                      })}
+                    </Masonry>
+                  </ResponsiveMasonry>
                 </div>
               ) : (
                 <div>

@@ -1,7 +1,7 @@
 form.create-entry {
     position: relative;
-    width: 480px;
-    margin: 30px auto 20px auto;
+    width: 450px;
+    margin: 2rem 1rem 0px 1rem;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
@@ -46,8 +46,8 @@ form.create-entry {
   }
 
   .outer-block{
-    padding: 0 4rem;
-    margin-top: 2rem;
+    padding: 0 1rem;
+    margin: 2rem;
   }
 
   .gif-image{

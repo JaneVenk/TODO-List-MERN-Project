@@ -115,90 +115,94 @@ function SignupPage() {
       ) : (
         <div>
           <MainHeader />
-          <form className="auth-form">
-            <div className="mb-3">
-              <label className="form-label">Your name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="userName"
-                name="name"
-                onChange={updateUserInfo}
-                value={userInfo.name}
-              />
-              {isValidUserName ? null : (
-                <Grow in={!isValidUserName}>
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text form-label">Write some name.</p>
-                  </div>
-                </Grow>
-              )}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                name="email"
-                onChange={updateUserInfo}
-                value={userInfo.email}
-              />
-              <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
+          <div className="form-center">
+            <form className="auth-form">
+              <div className="mb-3">
+                <label className="form-label">Your name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="userName"
+                  name="name"
+                  onChange={updateUserInfo}
+                  value={userInfo.name}
+                />
+                {isValidUserName ? null : (
+                  <Grow in={!isValidUserName}>
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text form-label">
+                        Write some name.
+                      </p>
+                    </div>
+                  </Grow>
+                )}
               </div>
-              {isValidEmail ? null : (
-                <Grow in={!isValidEmail}>
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text form-label">Invalid email.</p>
-                  </div>
-                </Grow>
-              )}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="exampleInputPassword1" className="form-label">
-                Password
-              </label>
-              <input
-                type="password"
-                className="form-control"
-                id="exampleInputPassword1"
-                name="password"
-                onChange={updateUserInfo}
-                value={userInfo.password}
-              />
-              {isValidPassword ? null : (
-                <Grow in={!isValidPassword}>
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text form-label">
-                      Short password. Password must contain at least 6
-                      characters.
-                    </p>
-                  </div>
-                </Grow>
-              )}
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-              onClick={tryToSignup}
-            >
-              Signup
-            </button>
-            <button
-              type="submit"
-              className="btn btn-primary to-hello-page-button"
-              onClick={backToHomePage}
-            >
-              <span>Hello</span> Page
-            </button>
-          </form>
+              <div className="mb-3">
+                <label htmlFor="exampleInputEmail1" className="form-label">
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="email"
+                  onChange={updateUserInfo}
+                  value={userInfo.email}
+                />
+                <div id="emailHelp" className="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+                {isValidEmail ? null : (
+                  <Grow in={!isValidEmail}>
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text form-label">Invalid email.</p>
+                    </div>
+                  </Grow>
+                )}
+              </div>
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword1"
+                  name="password"
+                  onChange={updateUserInfo}
+                  value={userInfo.password}
+                />
+                {isValidPassword ? null : (
+                  <Grow in={!isValidPassword}>
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text form-label">
+                        Short password. Password must contain at least 6
+                        characters.
+                      </p>
+                    </div>
+                  </Grow>
+                )}
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={tryToSignup}
+              >
+                Signup
+              </button>
+              <button
+                type="submit"
+                className="btn btn-primary to-hello-page-button"
+                onClick={backToHomePage}
+              >
+                <span>Hello</span> Page
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </React.Fragment>

@@ -12,21 +12,20 @@ function MainHeader(props) {
 
   const navigate = useNavigate();
 
-  function logOutClick() {
-    // TODO : logout
+  function logOut() {
     authContext.logout();
     navigate("/");
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand bg-light">
       <img className="dog-image" src={dogImage} alt="dogimage"></img>
       <div className="container-fluid">
         <h2 className="navbar-brand application-name"> TODOG List</h2>
         <div className="navbar-nav">
           {authContext.token && (
             <button
-              onClick={logOutClick}
+              onClick={logOut}
               className="btn btn-primary"
               type="button"
             >

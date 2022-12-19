@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import { validateValueLength } from "../checks";
 
@@ -15,7 +16,6 @@ import AddIcon from "@mui/icons-material/Add";
 import ErrorIcon from "@mui/icons-material/Error";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
-import Masonry from "@mui/lab/Masonry";
 
 import dogGif from "../images/dog-gif.gif";
 
@@ -142,56 +142,69 @@ function NotesPage() {
               setNewNote={setNewNote}
               setIsValidNote={setIsValidNote}
             >
-              <form className="create-entry">
-                <textarea
-                  rows={ckickOnAddNewNote ? 2 : 1}
-                  name="text"
-                  placeholder="Add new note..."
-                  onChange={updateNewNote}
-                  value={newNote}
-                  onClick={clickOnInput}
-                ></textarea>
+              <div className="form-center">
+                <form className="create-entry">
+                  <textarea
+                    rows={ckickOnAddNewNote ? 2 : 1}
+                    name="text"
+                    placeholder="Add new note..."
+                    onChange={updateNewNote}
+                    value={newNote}
+                    onClick={clickOnInput}
+                  ></textarea>
 
-                {isValidNote ? null : (
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text">Empty Note! Write something.</p>
-                  </div>
-                )}
+                  {isValidNote ? null : (
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text">
+                        Empty Note! Write something.
+                      </p>
+                    </div>
+                  )}
 
-                {isSuccessfulAdd ? null : (
-                  <div>
-                    <ErrorIcon className="warning-icon" />
-                    <p className="warning-text">
-                      Note add failed! Check errors.
-                    </p>
-                  </div>
-                )}
+                  {isSuccessfulAdd ? null : (
+                    <div>
+                      <ErrorIcon className="warning-icon" />
+                      <p className="warning-text">
+                        Note add failed! Check errors.
+                      </p>
+                    </div>
+                  )}
 
-                <Zoom in={ckickOnAddNewNote}>
-                  <Fab type="submit" onClick={addNewNote}>
-                    <AddIcon />
-                  </Fab>
-                </Zoom>
-              </form>
+                  <Zoom in={ckickOnAddNewNote}>
+                    <Fab type="submit" onClick={addNewNote}>
+                      <AddIcon />
+                    </Fab>
+                  </Zoom>
+                </form>
+              </div>
             </OutsideClick>
 
             {notes ? (
               notes.length ? (
                 <div className="outer-block">
-                  <Masonry style={{ margin: 0 }} spacing={4}>
-                    {notes.map((note) => {
-                      return (
-                        <NoteItem
-                          key={note._id}
-                          text={note.text}
-                          id={note._id}
-                          backgroundColor={listColor}
-                          setNotes={setNotes}
-                        />
-                      );
-                    })}
-                  </Masonry>
+                  <ResponsiveMasonry
+                    columnsCountBreakPoints={{
+                      350: 1,
+                      750: 2,
+                      900: 3,
+                      1224: 4,
+                    }}
+                  >
+                    <Masonry Masonry gutter={"1.5rem"}>
+                      {notes.map((note) => {
+                        return (
+                          <NoteItem
+                            key={note._id}
+                            text={note.text}
+                            id={note._id}
+                            backgroundColor={listColor}
+                            setNotes={setNotes}
+                          />
+                        );
+                      })}
+                    </Masonry>
+                  </ResponsiveMasonry>
                 </div>
               ) : (
                 <div>
