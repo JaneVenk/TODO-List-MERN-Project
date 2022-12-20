@@ -28,11 +28,14 @@ This project has backend and frontend parts, which use **`MERN`** stack:
 
 ## How it looks like
 
-<img src="https://user-images.githubusercontent.com/105806950/208623048-69269894-6b98-4222-9a8b-6e8aeea98d75.png" width="203">&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208628031-d1d3af3f-067b-406e-aced-f70051a5bb0f.png" width="800">
+<img src="https://user-images.githubusercontent.com/105806950/208628031-d1d3af3f-067b-406e-aced-f70051a5bb0f.png" width="800">
 
 
 
-<img src="https://user-images.githubusercontent.com/105806950/208625880-5370fb68-bbce-4339-a292-3fa59aff2af9.png" width="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208625978-ed8e1ee6-2b57-4493-9329-59b3fc5130ac.png" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208626648-9e224029-b7e1-4521-842d-df22c3033223.png" width="200">
+<img src="https://user-images.githubusercontent.com/105806950/208625880-5370fb68-bbce-4339-a292-3fa59aff2af9.png" width="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208625978-ed8e1ee6-2b57-4493-9329-59b3fc5130ac.png" width="350">
+
+<img src="https://user-images.githubusercontent.com/105806950/208623048-69269894-6b98-4222-9a8b-6e8aeea98d75.png" width="220">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208644335-c1a6a712-952f-4b5e-b176-fee161ebbaab.png" width="218">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/105806950/208626648-9e224029-b7e1-4521-842d-df22c3033223.png" width="200">
+
 
 
 
