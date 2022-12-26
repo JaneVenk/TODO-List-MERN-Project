@@ -55,7 +55,7 @@ https://user-images.githubusercontent.com/105806950/208647324-48981821-8df8-4b36
 
 [Dog gif](https://www.flaticon.com/ru/free-animated-icon/dog_8270876?term=%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0&page=1&position=2&page=1&position=2&related_id=8270876&origin=search)
 
-
+[Favicon](https://icons8.com/icon/4NDyVzGUTlSq/bulleted-list)
 
 
 
