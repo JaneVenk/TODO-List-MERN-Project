@@ -1,16 +1,16 @@
 # TODOG List <img src="https://user-images.githubusercontent.com/105806950/207606295-5b042f22-db15-46cd-9531-a742e5afb5c2.gif" width="100">
-TODOG List it`s todo list web application.<br>In this application you can create/delete/update lists and notes in this lists.<br>There is basic authentication.
+TODOG List is a todo list web application.<br>In this application you can create/delete/update lists and notes in this lists.<br>There is basic authentication functionality.
 
 👉 Try it yourself: https://mernfrontend.web.app/
 
-❗ ATTENTION ❗  Hosting, where backend deploys has some rules fo free useage:<br>
+❗ ATTENTION ❗  Hosting, where backend is deployed has limitations for free plan:<br>
 The Starter Plan includes $5 worth of resources across all of your projects for up to 500 hours, whichever runs out first.<br>
-So, if application not work, please, try again in next mounth.
+So, if application is not working, please, try again in next month or take a look at video at the bottom 😊
 
 
 ## Project Content
 
-This project has backend and frontend parts, which use **`MERN`** stack:
+The project is based on **`MERN`** stack:
 
 
 | <img src="https://user-images.githubusercontent.com/105806950/207614515-5ab720ab-78c4-4d10-9a7b-2e927b1babb5.png" width="80">       | <img src="https://assets.website-files.com/61ca3f775a79ec5f87fcf937/6202fcdee5ee8636a145a41b_1234.png" width="80">               | <img src="https://user-images.githubusercontent.com/105806950/207611822-8d8a5fc7-f4db-42a9-8f0e-7e39b6cab8b1.png" width="80"> | <img src="https://user-images.githubusercontent.com/105806950/207616509-114ec07c-af03-4572-91f5-515f4d5b6850.png" width="80"> |
@@ -19,11 +19,11 @@ This project has backend and frontend parts, which use **`MERN`** stack:
 |MongoDB is a non-relational document database that provides support for JSON-like storage.|Express is a node js web application framework that provides broad features for building web and mobile applications.|React is a library for building composable user interfaces.|Node. js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser.|
 |**M**|**E**|**R**|**N**|
 
-## Deploy application
+## Deployment
 
-+ Frontend part deploys on firebase hosting 👉 [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAqOucBhDrARIsAPCQL1YRcMFrokBmrusViaBMurlHbLidRjqR2nG9D5ldwAhPxJXREzebFDsaAkjYEALw_wcB&gclsrc=aw.ds)
++ Frontend part is deployed on firebase hosting 👉 [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAqOucBhDrARIsAPCQL1YRcMFrokBmrusViaBMurlHbLidRjqR2nG9D5ldwAhPxJXREzebFDsaAkjYEALw_wcB&gclsrc=aw.ds)
 
-+ Backend part deploys on railway hosting 👉 [Railway](https://railway.app/)
++ Backend part is deployed on railway hosting 👉 [Railway](https://railway.app/)
 
 
 ## How it looks like
